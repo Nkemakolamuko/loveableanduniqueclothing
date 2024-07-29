@@ -21,7 +21,7 @@ const Cookies = ({ cookie, handleClose }) => {
             </p>
             <p className="flex items-center mt-[10px] gap-5 justify-end text-[18px]">
               <a
-                href="#"
+                // href="#"
                 title="To Privacy Policy"
                 className="hover:text-[#818181] leading-7 text-[#3c3c3c] cursor-pointer transition-all duration-300"
                 onClick={handleClose}
@@ -30,7 +30,7 @@ const Cookies = ({ cookie, handleClose }) => {
               </a>
 
               <a
-                href="#"
+                // href="#"
                 title="Accept"
                 className="flex items-center leading-7 text-[#f1f1f1] cursor-pointer hover:text-[#3c3c3c] gap-2 transition-all duration-300"
                 onClick={handleClose}

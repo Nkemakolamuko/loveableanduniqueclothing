@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 const reviews = [
   {
@@ -20,7 +20,7 @@ const reviews = [
 const Reviews = () => {
   return (
     <div className="max-w-7xl mx-auto p-4">
-      <h2 className="text-3xl font-semibold text-center mb-8">Customer Reviews</h2>
+      <h2 className="text-2xl font-bold mb-4">Customer Reviews</h2>
       <Carousel showThumbs={true} autoPlay={false} infiniteLoop={false}>
         {reviews.map((review, index) => (
           <div key={index} className="bg-white p-4 shadow-md rounded-lg">
