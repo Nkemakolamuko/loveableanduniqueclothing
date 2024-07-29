@@ -23,7 +23,7 @@ const images = [
 
 const Hero = () => {
   return (
-    <div className="relative h-[84vh] md:h-[86vh] w-full bg-slate-100 overflow-hidden">
+    <div className="relative h-[82vh] md:h-[86vh] w-full bg-slate-100 overflow-hidden">
       <Carousel
         showArrows={true}
         showThumbs={false}
@@ -32,7 +32,7 @@ const Hero = () => {
         className="h-full w-full"
       >
         {images.map((image, index) => (
-          <div key={index} className="relative h-[84vh] md:h-[86vh]">
+          <div key={index} className="relative h-[82vh] md:h-[86vh]">
             <img
               src={image.src}
               alt={`Slide ${index + 1}`}
