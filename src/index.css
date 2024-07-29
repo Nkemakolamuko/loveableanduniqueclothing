@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Override the default styles for navigation buttons */
+.carousel .control-arrow {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.carousel .control-next.control-arrow,
+.carousel .control-prev.control-arrow {
+  background: rgba(0, 0, 0, 0.5); 
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+
+/* Customize button appearance on hover */
+.carousel .control-next.control-arrow:hover,
+.carousel .control-prev.control-arrow:hover {
+  background: rgba(0, 0, 0, 0.7); 
+}
+
+/* Control the appearance of arrow icons */
+.carousel .control-next.control-arrow:before,
+.carousel .control-prev.control-arrow:before {
+  font-size: 20px; /* Increase the size of the arrow icons */
+  color: white; 
+}
