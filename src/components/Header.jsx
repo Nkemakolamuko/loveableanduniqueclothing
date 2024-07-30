@@ -69,9 +69,12 @@ const Header = () => {
             </Link>
           </ul>
 
-          <button className="py-2 px-4 bg-black text-white font-semibold">
-            Contact Us NOW
-          </button>
+          <a
+            href="tel:+2348132626455"
+            className="py-2 px-8 bg-black shadow-md shadow-black hover:shadow-none text-white font-semibold cursor-pointer text-center transition-all duration-300"
+          >
+            Contact Us
+          </a>
         </nav>
       </Headroom>
 
@@ -83,11 +86,11 @@ const Header = () => {
             <GiHamburgerMenu className="w-8 h-8" />{" "}
           </div>
 
-          <span className="text-[24px] font-bold">LUC</span>
+          <a href="/" className="text-[24px] font-bold">LUC</a>
 
           <a
-            href="tel:+2348012345678"
-            className="py-2 px-4 bg-black text-white font-semibold cursor-pointer text-center"
+            href="tel:+2348132626455"
+            className="py-2 px-4 bg-black hover:shadow-md hover:shadow-black text-white font-semibold cursor-pointer text-center transition-all duration-300"
           >
             Contact Us
           </a>

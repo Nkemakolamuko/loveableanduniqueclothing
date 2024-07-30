@@ -18,7 +18,15 @@ const images = [
   {
     src: "https://images.unsplash.com/photo-1630726410985-a1021e8a232a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBsYWRpZXN8ZW58MHx8MHx8fDA%3D",
     text: "Casual Street Style"
-  }
+  },
+  {
+    src: "https://images.pexels.com/photos/7202784/pexels-photo-7202784.jpeg?auto=compress&cs=tinysrgb&w=600",
+    text: "Suits"
+  },
+  {
+    src: "https://images.pexels.com/photos/936058/pexels-photo-936058.jpeg?auto=compress&cs=tinysrgb&w=600",
+    text: "Simple Gowns"
+  },
 ];
 
 const Hero = () => {
@@ -51,7 +59,7 @@ const Hero = () => {
         </h2>
         <Link
           to="/new-arrivals"
-          className="py-2 px-6 bg-neutral-800 text-slate-100 shadow rounded hover:bg-neutral-950 hover:text-white flex items-center gap-6 transition-all duration-300"
+          className="py-2 px-6 md:bg-neutral-800 bg-neutral-950 text-slate-100 shadow rounded hover:bg-neutral-950 hover:text-white flex items-center gap-6 transition-all duration-300"
         >
           <FaShoppingCart className="w-7 h-7" />
           <span className="font-medium text-[16px] md:text-[20px] lg:text-[24px]">SHOP NOW</span>

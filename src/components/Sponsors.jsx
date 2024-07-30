@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from "react";
+import { FaCcVisa, FaCcMastercard } from "react-icons/fa6";
+import { FaPaypal } from "react-icons/fa";
 
 const Sponsors = () => {
   const containerRef = useRef(null);
@@ -12,9 +14,9 @@ const Sponsors = () => {
     "Sponsor 5",
     "Sponsor 6",
     "Sponsor 7",
-    "Sponsor 8",
-    "Sponsor 9",
-    "Sponsor 10",
+    <FaPaypal />,
+    <FaCcMastercard />,
+    <FaCcVisa />
   ];
 
   // Duplicating the list to create an infinite scroll effect

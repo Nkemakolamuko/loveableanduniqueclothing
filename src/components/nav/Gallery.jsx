@@ -38,12 +38,12 @@ const Gallery = () => {
               alt="Ankara Clothes"
               className="w-full h-full object-cover hover:scale-105 md:hidden block transition-transform duration-300"
             />
-            <div className="flex items-center bottom-5 absolute justify-between rounded w-[90%] shadow-sm hover:shadow-none shadow-white py-3 bg-black/80 text-white border border-slate-800 px-4 cursor-pointer group transition-all duration-300">
+            <Link to="/gallery" className="flex items-center bottom-5 absolute justify-between rounded w-[90%] shadow-sm hover:shadow-none shadow-white py-3 bg-black/80 text-white border border-slate-800 px-4 cursor-pointer group transition-all duration-300">
               <p className="group-hover:underline">Ankara Outfits</p>
               <p className="rounded-full flex items-center justify-center p-2 bg-white text-black group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
                 <FaArrowRightLong />
               </p>
-            </div>
+            </Link>
           </motion.div>
 
           <div className="flex flex-col gap-4 justify-center h-[100vh]">
@@ -61,12 +61,12 @@ const Gallery = () => {
                 alt="Ankara Clothes"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
-              <div className="flex items-center bottom-5 absolute justify-between rounded w-[90%] shadow-sm hover:shadow-none shadow-white py-3 bg-black/80 text-white border border-slate-800 px-4 cursor-pointer group transition-all duration-300">
+              <Link to="/gallery" className="flex items-center bottom-5 absolute justify-between rounded w-[90%] shadow-sm hover:shadow-none shadow-white py-3 bg-black/80 text-white border border-slate-800 px-4 cursor-pointer group transition-all duration-300">
                 <p className="group-hover:underline">Track-Suits</p>
                 <p className="rounded-full flex items-center justify-center p-2 bg-white text-black group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
                   <FaArrowRightLong />
                 </p>
-              </div>
+              </Link>
             </motion.div>
 
             <motion.div
@@ -83,12 +83,12 @@ const Gallery = () => {
                 alt="Ankara Clothes"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
-              <div className="flex items-center bottom-5 absolute justify-between rounded w-[90%] shadow-sm hover:shadow-none shadow-white py-3 bg-black/80 text-white border border-slate-800 px-4 cursor-pointer group transition-all duration-300">
+              <Link to="/gallery" className="flex items-center bottom-5 absolute justify-between rounded w-[90%] shadow-sm hover:shadow-none shadow-white py-3 bg-black/80 text-white border border-slate-800 px-4 cursor-pointer group transition-all duration-300">
                 <p className="group-hover:underline">Senator Outfits</p>
                 <p className="rounded-full flex items-center justify-center p-2 bg-white text-black group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
                   <FaArrowRightLong />
                 </p>
-              </div>
+              </Link>
             </motion.div>
           </div>
         </AnimatePresence>

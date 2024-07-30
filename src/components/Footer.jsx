@@ -104,9 +104,9 @@ const Footer = () => {
           <div className="flex flex-col">
             <p className="mb-4 font-semibold">Help Links</p>
             <a href="/" className="mb-2">T&C's</a>
-            <a href="/" className="mb-2">FAQ</a>
+            <a href="/faq" className="mb-2">FAQ</a>
             <a href="/" className="mb-2">Privacy Policy</a>
-            <a href="/" className="mb-2">About Us</a>
+            <a href="/about" className="mb-2">About Us</a>
             <a href="/" className="mb-2">Become An Intern</a>
           </div>
           <div className="flex flex-col">

@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import img from "../assets/img.png";
+import React, { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { toast, Toaster } from "react-hot-toast";
@@ -7,6 +6,14 @@ import { toast, Toaster } from "react-hot-toast";
 const NewsLetter = ({ news, handleClose }) => {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  useEffect(() => {
+    const hasInteracted = localStorage.getItem("newsletter-interacted");
+    if (!hasInteracted) {
+      setIsPopupVisible(true);
+    }
+  }, []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -23,6 +30,8 @@ const NewsLetter = ({ news, handleClose }) => {
       if (response.ok) {
         toast.success("Subscribed successfully!");
         setEmail("");
+        localStorage.setItem("newsletter-interacted", "true");
+        setIsPopupVisible(false);
       } else {
         toast.error("Subscription failed. Please try again.");
       }
@@ -32,6 +41,16 @@ const NewsLetter = ({ news, handleClose }) => {
       setLoading(false);
     }
   };
+
+  const handleNoThanks = () => {
+    localStorage.setItem("newsletter-interacted", "true");
+    setIsPopupVisible(false);
+    handleClose();
+  };
+
+  if (!isPopupVisible) {
+    return null;
+  }
 
   return (
     <AnimatePresence>
@@ -97,7 +116,12 @@ const NewsLetter = ({ news, handleClose }) => {
                 </form>
 
                 <label className="flex items-center gap-3 text-[#2d2d2d] cursor-pointer">
-                  <input type="checkbox" name="mailing" id="mailing" />
+                  <input
+                    type="checkbox"
+                    name="mailing"
+                    id="mailing"
+                    onChange={handleNoThanks}
+                  />
                   <span className="border-b border-[#6c6c6c]">No thanks</span>
                 </label>
               </div>

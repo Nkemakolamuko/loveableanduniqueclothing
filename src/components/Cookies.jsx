@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaCheck } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Cookies = ({ cookie, handleClose }) => {
+  const [isCookieVisible, setIsCookieVisible] = useState(false);
+
+  useEffect(() => {
+    const hasAcceptedCookies = localStorage.getItem("cookies-accepted");
+    if (!hasAcceptedCookies) {
+      setIsCookieVisible(true);
+    }
+  }, []);
+
+  const handleAccept = () => {
+    localStorage.setItem("cookies-accepted", "true");
+    setIsCookieVisible(false);
+    handleClose();
+  };
+
+  if (!isCookieVisible) {
+    return null;
+  }
+
   return (
     <AnimatePresence>
       {cookie && (
@@ -13,7 +32,7 @@ const Cookies = ({ cookie, handleClose }) => {
           transition={{ duration: 0.5 }}
           className="fixed z-[99] bottom-[15px] md:left-[15px] md:w-[368px] w-full p-4 bg-[rgba(20,20,20,0.9)]"
         >
-          <div className="flex flex-col text-[#fffff] text-[16px] leading-7 font-semibold">
+          <div className="flex flex-col text-white text-[16px] leading-7 font-semibold">
             <p className="text-[#ccc] text-[14px]">
               The cookie settings on this website are set to 'allow all cookies'
               to give you the very best experience. Please click Accept Cookies
@@ -33,7 +52,7 @@ const Cookies = ({ cookie, handleClose }) => {
                 // href="#"
                 title="Accept"
                 className="flex items-center leading-7 text-[#f1f1f1] cursor-pointer hover:text-[#3c3c3c] gap-2 transition-all duration-300"
-                onClick={handleClose}
+                onClick={handleAccept}
               >
                 <span>ACCEPT</span>
                 <FaCheck />

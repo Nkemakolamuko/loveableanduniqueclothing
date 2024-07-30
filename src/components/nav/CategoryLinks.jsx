@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/img.png";
+import { Link } from "react-router-dom";
 import { FaScissors } from "react-icons/fa6";
 
 const CategoryLinks = ({ handleMouseOver, handleMouseLeave }) => {
@@ -12,22 +12,30 @@ const CategoryLinks = ({ handleMouseOver, handleMouseLeave }) => {
       <div className="w-full col-span-1">
         <p className="font-semibold text-[18px] mb-4 p-4">CHOOSE CATEGORY</p>
         <ul className="w-full">
-          <li className="py-2 px-4 hover:bg-slate-100 cursor-pointer transition-all duration-300 flex items-center gap-3">
-            <FaScissors />
-            <span>Ankara</span>{" "}
-          </li>
-          <li className="py-2 px-4 hover:bg-slate-100 cursor-pointer transition-all duration-300 flex items-center gap-3">
-            <FaScissors />
-            <span>Hoodie</span>{" "}
-          </li>
-          <li className="py-2 px-4 hover:bg-slate-100 cursor-pointer transition-all duration-300 flex items-center gap-3">
-            <FaScissors />
-            <span>Jump-suit</span>{" "}
-          </li>
-          <li className="py-2 px-4 hover:bg-slate-100 cursor-pointer transition-all duration-300 flex items-center gap-3">
-            <FaScissors />
-            <span>Senator</span>{" "}
-          </li>
+          <Link to="/gallery">
+            <li className="py-2 px-4 hover:bg-slate-100 cursor-pointer transition-all duration-300 flex items-center gap-3">
+              <FaScissors />
+              <span>Ankara</span>
+            </li>
+          </Link>
+          <Link to="/gallery">
+            <li className="py-2 px-4 hover:bg-slate-100 cursor-pointer transition-all duration-300 flex items-center gap-3">
+              <FaScissors />
+              <span>Hoodie</span>
+            </li>
+          </Link>
+          <Link to="/gallery">
+            <li className="py-2 px-4 hover:bg-slate-100 cursor-pointer transition-all duration-300 flex items-center gap-3">
+              <FaScissors />
+              <span>Jump-suit</span>
+            </li>
+          </Link>
+          <Link to="/gallery">
+            <li className="py-2 px-4 hover:bg-slate-100 cursor-pointer transition-all duration-300 flex items-center gap-3">
+              <FaScissors />
+              <span>Senator</span>
+            </li>
+          </Link>
         </ul>
       </div>
 
