@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const images = [
   {
-    src: img1,
+    src: img9,
     text: "Our Banner"
   },
   {
@@ -20,7 +20,7 @@ const images = [
     text: "Elegant Evening Wear"
   },
   {
-    src: img9,
+    src: img1,
     text: "Customised Hoodies"
   },
   {
