@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 const images = [
   {
     src: img9,
-    text: "Our Banner"
+    text: "Customised Hoodie"
   },
   {
     src: "https://images.unsplash.com/photo-1681545303529-b6beb2e19f02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBsYWRpZXN8ZW58MHx8MHx8fDA%3D",
@@ -21,7 +21,7 @@ const images = [
   },
   {
     src: img1,
-    text: "Customised Hoodies"
+    text: "Our Banner"
   },
   {
     src: "https://images.pexels.com/photos/7202784/pexels-photo-7202784.jpeg?auto=compress&cs=tinysrgb&w=600",
