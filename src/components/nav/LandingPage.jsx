@@ -4,6 +4,7 @@ import CategoryLinks from "./CategoryLinks";
 import Hero from "../hero/Hero";
 import AddOn from "../addons/AddOn";
 import Gallery from "./Gallery";
+import About from "./About";
 import Footer from "../Footer";
 import { GlobalContext } from "../../App";
 import Sponsors from "../Sponsors";
@@ -31,6 +32,9 @@ const LandingPage = () => {
 
       {/* Gallery */}
       <Gallery />
+
+      {/* About */}
+      <About />
 
       {/* Sponsors */}
       <Sponsors />

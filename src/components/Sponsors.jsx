@@ -5,15 +5,8 @@ import { FaPaypal } from "react-icons/fa";
 const Sponsors = () => {
   const containerRef = useRef(null);
 
-  // Dummy data for sponsors' names
   const sponsors = [
-    "Sponsor 1",
-    "Sponsor 2",
-    "Sponsor 3",
-    "Sponsor 4",
-    "Sponsor 5",
-    "Sponsor 6",
-    "Sponsor 7",
+    "God",
     <FaPaypal />,
     <FaCcMastercard />,
     <FaCcVisa />
@@ -40,7 +33,7 @@ const Sponsors = () => {
   }, []);
 
   return (
-    <>
+    <div className="md:my-8 my-6">
       <h2 className="font-semibold text-slate-800 mb-4 text-center text-[24px]">
         Our Sponsors
       </h2>
@@ -59,7 +52,7 @@ const Sponsors = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

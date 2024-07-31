@@ -87,7 +87,7 @@ const Footer = () => {
             <h2 className="font-semibold mb-4">Contact Us Today</h2>
             <p className="flex items-center gap-3 mb-4">
               <FaPhone />
-              <a href="tel:+2348012345678">08012345678</a>
+              <a href="tel:+2348012345678">08132626455</a>
             </p>
             <p className="flex items-center gap-3 mb-4">
               <FaEnvelope />
@@ -123,7 +123,7 @@ const Footer = () => {
 
         <div className="flex flex-col items-center justify-center w-full">
           <p className="mb-2 border-b border-slate-500 w-full text-center">
-            2024 LOVEABLE CLOTHING
+            2024 LOVEABLE & UNIQUE CLOTHING
           </p>
           <p>All Rights Reserved</p>
         </div>

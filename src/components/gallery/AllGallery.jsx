@@ -5,60 +5,70 @@ const products = [
   {
     id: 1,
     image: "https://plus.unsplash.com/premium_photo-1705351823395-f31e73af2484?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBpY3R1cmUlMjBvZiUyMGJsYWNrJTIwbGFkaWVzfGVufDB8fDB8fHww",
+    price: "₦79, 000",
     title: "Product 1",
     whatsappLink: "https://wa.me/yourphonenumber?text=I'm interested in Product 1",
   },
   {
     id: 2,
     image: "https://images.unsplash.com/photo-1638158894759-47edf16f80a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBsYWRpZXN8ZW58MHx8MHx8fDA%3D",
+    price: "₦27, 000",
     title: "Product 2",
     whatsappLink: "https://wa.me/yourphonenumber?text=I'm interested in Product 2",
   },
   {
     id: 3,
     image: "https://plus.unsplash.com/premium_photo-1705351823395-f31e73af2484?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBpY3R1cmUlMjBvZiUyMGJsYWNrJTIwbGFkaWVzfGVufDB8fDB8fHww",
+    price: "₦91, 000",
     title: "Product 3",
     whatsappLink: "https://wa.me/yourphonenumber?text=I'm interested in Product 3",
   },
   {
     id: 4,
     image: "https://plus.unsplash.com/premium_photo-1705351823395-f31e73af2484?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBpY3R1cmUlMjBvZiUyMGJsYWNrJTIwbGFkaWVzfGVufDB8fDB8fHww",
+    price: "₦88, 000",
     title: "Product 4",
     whatsappLink: "https://wa.me/yourphonenumber?text=I'm interested in Product 4",
   },
   {
     id: 6,
     image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Q2xvdGluZyUyMGJyYW5kJTIwbW9kZWx8ZW58MHx8MHx8fDA%3D",
+    price: "₦127, 000",
     title: "Product 6",
     whatsappLink: "https://wa.me/yourphonenumber?text=I'm interested in Product 6",
   },
   {
     id: 5,
     image: "https://plus.unsplash.com/premium_photo-1705351823395-f31e73af2484?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBpY3R1cmUlMjBvZiUyMGJsYWNrJTIwbGFkaWVzfGVufDB8fDB8fHww",
+    price: "₦68, 000",
     title: "Product 5",
     whatsappLink: "https://wa.me/yourphonenumber?text=I'm interested in Product 5",
   },
   {
     id: 7,
     image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Q2xvdGluZyUyMGJyYW5kJTIwbW9kZWx8ZW58MHx8MHx8fDA%3D",
+    price: "₦105, 000",
     title: "Product 7",
     whatsappLink: "https://wa.me/yourphonenumber?text=I'm interested in Product 7",
   },
   {
     id: 8,
     image: "https://plus.unsplash.com/premium_photo-1705351823395-f31e73af2484?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBpY3R1cmUlMjBvZiUyMGJsYWNrJTIwbGFkaWVzfGVufDB8fDB8fHww",
+    price: "₦59, 000",
     title: "Product 8",
     whatsappLink: "https://wa.me/yourphonenumber?text=I'm interested in Product 8",
   },
   {
     id: 9,
     image: "https://plus.unsplash.com/premium_photo-1705351823395-f31e73af2484?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBpY3R1cmUlMjBvZiUyMGJsYWNrJTIwbGFkaWVzfGVufDB8fDB8fHww",
+    price: "₦165, 000",
     title: "Product 9",
     whatsappLink: "https://wa.me/yourphonenumber?text=I'm interested in Product 9",
   },
   {
     id: 10,
     image: "https://plus.unsplash.com/premium_photo-1705351823395-f31e73af2484?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBpY3R1cmUlMjBvZiUyMGJsYWNrJTIwbGFkaWVzfGVufDB8fDB8fHww",
+    price: "₦95, 000",
     title: "Product 10",
     whatsappLink: "https://wa.me/yourphonenumber?text=I'm interested in Product 10",
   },
@@ -100,6 +110,7 @@ const AllGallery = () => {
             />
             <div className="p-4">
               <h2 className="text-xl font-semibold">{product.title}</h2>
+              <p className="mt-2">{product.price}</p>
               <button
                 onClick={() => handleBuyNowClick(product)}
                 className="mt-4 block w-full text-center border py-2 rounded bg-[#000] font-semibold text-white transition duration-300"

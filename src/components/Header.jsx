@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import CategoryLinks from "./nav/CategoryLinks";
 import { GlobalContext } from "../App";
+import logo from "../assets/LOGO.jpg"
 
 const Header = () => {
   const { show, setShow, showSmall, setShowSmall } = useContext(GlobalContext);
@@ -18,7 +19,10 @@ const Header = () => {
       {/* Large Screen */}
       <Headroom className="z-[9999] md:block hidden">
         <nav className="flex items-center justify-between px-4 bg-white z-[999] border-b">
-          <span className="text-[24px] font-bold">LUC</span>
+          {/* <span className="text-[24px] font-bold">LUC</span> */}
+          <div className="py-2">
+          <img src={logo} alt="Logo" className="w-auto h-[50px]" />
+          </div>
 
           <ul className="flex items-center gap-6 font-medium p-4">
             <Link to={"/"}>
@@ -62,6 +66,11 @@ const Header = () => {
                 Gallery
               </li>
             </Link>
+            <Link to={"/about"}>
+              <li className="hover:underline hover:underline-offset-2 transition-all duration-300">
+                About
+              </li>
+            </Link>
             <Link to={"/reviews"}>
               <li className="hover:underline hover:underline-offset-2 transition-all duration-300">
                 Reviews
@@ -90,7 +99,7 @@ const Header = () => {
 
           <a
             href="tel:+2348132626455"
-            className="py-2 px-4 bg-black hover:shadow-md hover:shadow-black text-white font-semibold cursor-pointer text-center transition-all duration-300"
+            className="py-2 px-4 bg-black hover:shadow-md hover:shadow-black text-white font-semibold cursor-pointer rounded text-center transition-all duration-300"
           >
             Contact Us
           </a>

@@ -7,6 +7,7 @@ const products = [
     image:
       "https://plus.unsplash.com/premium_photo-1705351823395-f31e73af2484?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBpY3R1cmUlMjBvZiUyMGJsYWNrJTIwbGFkaWVzfGVufDB8fDB8fHww",
     title: "Product 1",
+    price: "₦85, 000",
     whatsappLink:
       "https://wa.me/yourphonenumber?text=I'm interested in Product 1",
   },
@@ -15,6 +16,7 @@ const products = [
     image:
       "https://images.unsplash.com/photo-1638158894759-47edf16f80a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBsYWRpZXN8ZW58MHx8MHx8fDA%3D",
     title: "Product 2",
+    price: "₦77, 000",
     whatsappLink:
       "https://wa.me/yourphonenumber?text=I'm interested in Product 2",
   },
@@ -23,6 +25,7 @@ const products = [
     image:
       "https://plus.unsplash.com/premium_photo-1705351823395-f31e73af2484?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBpY3R1cmUlMjBvZiUyMGJsYWNrJTIwbGFkaWVzfGVufDB8fDB8fHww",
     title: "Product 3",
+    price: "₦65, 000",
     whatsappLink:
       "https://wa.me/yourphonenumber?text=I'm interested in Product 3",
   },
@@ -31,10 +34,10 @@ const products = [
     image:
       "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Q2xvdGluZyUyMGJyYW5kJTIwbW9kZWx8ZW58MHx8MHx8fDA%3D",
     title: "Product 4",
+    price: "₦135, 000",
     whatsappLink:
       "https://wa.me/yourphonenumber?text=I'm interested in Product 4",
   },
-  // Add more products as needed
 ];
 
 const NewArrivals = () => {
@@ -72,6 +75,7 @@ const NewArrivals = () => {
             />
             <div className="p-4">
               <h2 className="text-xl font-semibold">{product.title}</h2>
+              <p className="mt-2">{product.price}</p>
               <button
                 onClick={() => handleBuyNowClick(product)}
                 className="mt-4 block w-full text-center border py-2 rounded bg-[#000] font-semibold text-white transition duration-300"
