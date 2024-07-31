@@ -37,7 +37,7 @@ const LandingPage = () => {
       <About />
 
       {/* Sponsors */}
-      <Sponsors />
+      {/* <Sponsors /> */}
 
       {/* Footer */}
       <Footer />

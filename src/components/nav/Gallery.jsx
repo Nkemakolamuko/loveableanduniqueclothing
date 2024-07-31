@@ -2,7 +2,10 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import img from "../../assets/articles.jpg";
+import img9 from "../../assets/Image-9.jpg";
+import img2 from "../../assets/Image-2.jpg";
+import img3 from "../../assets/Image-3.jpg";
+import img5 from "../../assets/Image-5.jpg";
 
 const Gallery = () => {
   return (
@@ -29,17 +32,18 @@ const Gallery = () => {
             className="overflow-hidden w-full flex items-center justify-center relative h-[50vh] sm:h-[100vh] transition-transform duration-150"
           >
             <img
-              src={"https://plus.unsplash.com/premium_photo-1702058276403-ea6cfaf4f8f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGljdHVyZSUyMG9mJTIwYmxhY2slMjBsYWRpZXN8ZW58MHx8MHx8fDA%3D"}
+              src={img2}
               alt="Ankara Clothes"
               className="w-full h-full object-cover hover:scale-105 hidden md:block transition-transform duration-300"
             />
             <img
-              src={"https://images.unsplash.com/photo-1638158894759-47edf16f80a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBsYWRpZXN8ZW58MHx8MHx8fDA%3D"}
+              src={img5}
               alt="Ankara Clothes"
               className="w-full h-full object-cover hover:scale-105 md:hidden block transition-transform duration-300"
             />
             <Link to="/gallery" className="flex items-center bottom-5 absolute justify-between rounded w-[90%] shadow-sm hover:shadow-none shadow-white py-3 bg-black/80 text-white border border-slate-800 px-4 cursor-pointer group transition-all duration-300">
-              <p className="group-hover:underline">Ankara Outfits</p>
+              <p className="group-hover:underline md:hidden block">Vintage Shirts</p>
+              <p className="group-hover:underline hidden md:block">Lab Cloths</p>
               <p className="rounded-full flex items-center justify-center p-2 bg-white text-black group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
                 <FaArrowRightLong />
               </p>
@@ -56,13 +60,13 @@ const Gallery = () => {
             >
               <img
                 src={
-                  "https://plus.unsplash.com/premium_photo-1705351823395-f31e73af2484?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBpY3R1cmUlMjBvZiUyMGJsYWNrJTIwbGFkaWVzfGVufDB8fDB8fHww"
+                  img9
                 }
                 alt="Ankara Clothes"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
               <Link to="/gallery" className="flex items-center bottom-5 absolute justify-between rounded w-[90%] shadow-sm hover:shadow-none shadow-white py-3 bg-black/80 text-white border border-slate-800 px-4 cursor-pointer group transition-all duration-300">
-                <p className="group-hover:underline">Track-Suits</p>
+                <p className="group-hover:underline">Customised Hoodies</p>
                 <p className="rounded-full flex items-center justify-center p-2 bg-white text-black group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
                   <FaArrowRightLong />
                 </p>
@@ -78,13 +82,13 @@ const Gallery = () => {
             >
               <img
                 src={
-                  "https://plus.unsplash.com/premium_photo-1705351823395-f31e73af2484?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBpY3R1cmUlMjBvZiUyMGJsYWNrJTIwbGFkaWVzfGVufDB8fDB8fHww"
+                  img3
                 }
                 alt="Ankara Clothes"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
               <Link to="/gallery" className="flex items-center bottom-5 absolute justify-between rounded w-[90%] shadow-sm hover:shadow-none shadow-white py-3 bg-black/80 text-white border border-slate-800 px-4 cursor-pointer group transition-all duration-300">
-                <p className="group-hover:underline">Senator Outfits</p>
+                <p className="group-hover:underline">Unisex Lab Coats</p>
                 <p className="rounded-full flex items-center justify-center p-2 bg-white text-black group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
                   <FaArrowRightLong />
                 </p>

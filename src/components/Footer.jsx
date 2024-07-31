@@ -91,11 +91,11 @@ const Footer = () => {
             </p>
             <p className="flex items-center gap-3 mb-4">
               <FaEnvelope />
-              <a href="mailto:loveableclothing@gmail.com">loveableclothing@gmail.com</a>
+              <a href="mailto:mabeliheke3@gmail.com">mabeliheke3@gmail.com</a>
             </p>
             <p className="flex items-center gap-3 mb-4">
               <FaLocationDot />
-              <span>Abuja / Abia State</span>
+              <span>Triton Plaza off Mewar International University Abuja Keffi Road, Abuja <b>OR</b> 100 Jubilee by mosque, Aba Abia State</span>
             </p>
           </div>
         </div>

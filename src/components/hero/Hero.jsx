@@ -2,30 +2,34 @@ import React from "react";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaGreaterThan, FaPersonDress, FaScissors } from "react-icons/fa6";
+import img1 from "../../assets/Image-1.jpg"
+import img6 from "../../assets/Image-6.jpg"
+import img7 from "../../assets/Image-7.jpg"
+import img8 from "../../assets/Image-8.jpg"
+import img9 from "../../assets/Image-9.jpg"
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-// Sample images from Unsplash
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1485570661444-73b3f0ff9d2f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJsYWNrJTIwbGFkaWVzfGVufDB8fDB8fHww",
-    text: "Chic Summer Look"
+    src: img1,
+    text: "Our Banner"
   },
   {
     src: "https://images.unsplash.com/photo-1681545303529-b6beb2e19f02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBsYWRpZXN8ZW58MHx8MHx8fDA%3D",
     text: "Elegant Evening Wear"
   },
   {
-    src: "https://images.unsplash.com/photo-1630726410985-a1021e8a232a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBsYWRpZXN8ZW58MHx8MHx8fDA%3D",
-    text: "Casual Street Style"
+    src: img9,
+    text: "Customised Hoodies"
   },
   {
     src: "https://images.pexels.com/photos/7202784/pexels-photo-7202784.jpeg?auto=compress&cs=tinysrgb&w=600",
     text: "Suits"
   },
   {
-    src: "https://images.pexels.com/photos/936058/pexels-photo-936058.jpeg?auto=compress&cs=tinysrgb&w=600",
-    text: "Simple Gowns"
+    src: img8,
+    text: "Hoodies"
   },
 ];
 

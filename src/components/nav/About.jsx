@@ -18,7 +18,7 @@ const About = () => {
               
               
                 <div class="text-[#666666] leading-[1.5rem] mt-[16px]">
-                    <p>Loveable & Unique Clothing was launched 2010/2011, after having worked for several Nigerian designers, to turn his unique vision and passion for fashion into a reality.<br/>Loveable & Unique Clothing is more than just a brand, it is an emotional string of socially aware stories and expressions cut into clothing; we believe fashion can and should save lives. It is a “movement” that covers universal silhouettes with an African touch to a creative class of people, translating into a heady mixture of Nigerian inspired print fabrics, color, and contemporary androgynous clothing. We believe clothing should be fluid and have the ability to be worn by any and every one.<br/></p>
+                    <p>Loveable & Unique Clothing was launched 2019/2020, after having worked for several Nigerian designers, to turn her unique vision and passion for fashion into a reality.<br/>Loveable & Unique Clothing is more than just a brand, it is an emotional string of socially aware stories and expressions cut into clothing; we believe fashion can and should save lives. It is a “movement” that covers universal silhouettes with an African touch to a creative class of people, translating into a heady mixture of Nigerian inspired print fabrics, color, and contemporary androgynous clothing. We believe clothing should be fluid and have the ability to be worn by any and every one.<br/></p>
                 </div>
               
                 <div class="mt-[34px]">
